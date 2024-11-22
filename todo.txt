@@ -1,0 +1,31 @@
+//log
+
+server {
+    listen 80;
+    server_name bossi.pro www.bossi.pro;
+
+    # Set the root to the build directory of your React project
+    root /var/www/html/bossi_build_b;
+
+    # Ensure that index.html is served
+    index index.html;
+
+    # Configure Nginx to handle React routing
+    location / {
+        try_files $uri /index.html;
+    }
+
+    # Handle static files like JS/CSS/images
+    location ~* \.(?:ico|css|js|gif|jpe?g|png|woff2?|ttf|svg|eot)$ {
+        expires 6M;  # Cache these for 6 months
+        access_log off;
+    }
+
+    # Optional: Gzip compression for better performance
+    gzip on;
+    gzip_types text/css application/javascript image/svg+xml;
+    gzip_min_length 256;
+
+    # Redirect to HTTPS later when SSL is set up with Certbot
+    # listen 443 ssl; # Commented out for now
+}

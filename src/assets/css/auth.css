@@ -1,0 +1,52 @@
+.authBg{
+  background: #1E0446;
+    height: 100vh;
+  }
+.formIcon{
+   background: #EEEEEE;
+   border-right: 1px solid black;
+}
+.authForm{
+    width: 40%;
+    margin: auto;
+}
+.authRegBtn{
+    color: #DDBB58;
+    border: 2px solid #DDBB58;
+    background: none;
+}
+.authBtns{
+    width: 60%;
+    margin: auto;
+ 
+}
+.password{
+    position: relative;
+}
+.view{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000;
+    z-index: 1000;
+}
+.view:hover{
+    color: #DDBB58;
+}
+@media screen and (max-width:800px) {
+    .authForm{
+        width: 80%;
+    }
+}
+@media screen and (max-width:600px) {
+    .authBtns{
+        width: 80%;
+    }
+}
+@media screen and (max-width:360px) {
+    .authBtns{
+        width: 100%;
+    }
+}

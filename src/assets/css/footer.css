@@ -1,0 +1,16 @@
+.fixedBottomIcon{
+    width: 30px;
+    height: 30px;
+}
+.activeFixedBottomIcon{
+    background:linear-gradient(180deg, #f9b336 50%, #cb8100 100%);
+   color: white !important;
+ }
+ .normalColor{
+    filter: invert(1)
+ }
+ .bottomMenu{
+    overflow-x: hidden !important;
+    border-top: 2px solid gold;
+     box-shadow: 0 -1px 9px rgba(0, 0, 0, .34);
+}

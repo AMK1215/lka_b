@@ -1,0 +1,56 @@
+.activeInfoTab{
+   background: linear-gradient(180deg, #f9b336 50%, #cb8100 100%);
+    color: white !important;
+    border-bottom: 3px solid white;
+}
+.infoIcon{
+    font-size: 24px ;
+}
+.profileForm{
+    background: #0F0222;
+    width: 70%;
+    margin: auto;
+}
+.modal-header,.modal-footer{
+    border: 0 !important;
+}
+.infoBankAccModal{
+     height: 100vh;
+      display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.infoBankAccModal .modal-content{
+   max-width: 350px;
+    border: 2px solid #fff;
+    background: #262626;
+}
+.infoBankAccModalTitle{
+    color: #E5BB57;
+}
+@media screen and (max-width:800px){
+    .profileForm{
+        width: 95%;
+    }
+} 
+@media screen and (max-width:400px) {
+    .profileTitle{
+        font-size: 14px;
+     }
+     input::placeholder{
+        font-size: 13px;
+     }
+}
+@media screen and (max-width:380px) {
+    .infoIcon{
+        font-size: 20px ;
+    }
+    .infoTitle{
+         font-size: 13px;
+    }
+}
+@media screen and (max-width:350px) {
+    .profileTitle{
+        font-size: 13px;
+     }
+}

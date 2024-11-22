@@ -1,0 +1,139 @@
+.offcanvas{
+   background: #1E0446;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+.sidebar{
+    background: #1E0446 !important;
+    width: 30vw !important;
+     overflow-x: hidden !important;
+     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+.navHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+ }
+.sideBarImg{
+    width: 30px;
+    height: 30px;
+}
+.sidebarSocial{
+    margin: auto;
+    background: #3caf48;
+    width: 100%;
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .45);
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+}
+.navLogo{
+    height: 60px;
+}
+.mmFlag{
+    width: 38px;
+    height: 38px;
+}
+.navbar{
+   display: none !important;
+    margin-top: 0px ;
+    margin-bottom: 0px;
+    background: #5E0B6B;
+}
+.repeatIcon{
+    padding: 3px;
+    width: max-content;
+     border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLoginBtn{
+    font-size: 16px;
+    background: #E6AA12 !important;
+    color: #404040;
+    border-bottom: 3px solid #f6c13a !important ;
+}
+.depositLgImg{
+    height: 45px;
+}
+.navDepositImg{
+    height: 50px;
+    width: 60px;
+}
+.navProfileImg{
+    width: 20px;
+    height: 20px;
+}
+ 
+@media screen and (max-width:1030px) {
+    .sidebar{
+        width: 40vw !important;
+    }
+}
+@media screen and (max-width:992px) {
+    .navbar{
+        display: flex !important;
+    }
+}
+@media screen and (max-width:950px) {
+    .sidebar{
+        width: 60vw !important;
+    }
+}
+@media screen and (max-width:600px) {
+    .sidebar{
+        width: 65vw !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .sidebarSocial{
+        font-size: 18px !important;
+     }
+    .mmFlag{
+        width: 30px;
+        height: 30px;
+    }
+    .navLoginBtn{
+        font-size: 14px;
+    }
+    .sidebarTitle{
+        font-size: 14px;
+    }
+    .sidebarTeleText,.sidebarViberText{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:450px) {
+    .navLogo{
+        height: 45px;
+    }
+    .navDepositImg{
+        height: 40px;
+        width: 45px;
+     }
+     .navBalance{
+        font-size: 13px;
+     }
+}
+@media screen and (max-width:370px){
+    .sidebarTeleText,.sidebarViberText{
+        font-size: 16px;
+     }
+}
+@media screen and (max-width:360px) {
+    .mmFlag{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .navLoginBtn{
+        font-size: 13px;
+    }
+}
+ 

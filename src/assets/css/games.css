@@ -1,0 +1,91 @@
+.providerTabsContainer{
+    overflow-x: scroll;
+  }
+.providerTabsContainer::-webkit-scrollbar{
+    display: none;
+}
+.gameCardLg{
+    position: relative ;
+    
+}
+.gameCardLgBtn{
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    bottom: 45%;
+    right: 10%;
+    background: linear-gradient(180deg, #f9b336 50%, #cb8100 100%);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+ }
+ .gameCardLg:hover .gameCardLgBtn{
+   opacity: 1;
+   }
+.gameHeading{
+    background: #1E073F;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .07);
+}
+.activeGameHeading{
+   background: linear-gradient(180deg, #f9b336 50%, #cb8100 100%);
+}
+.gameHeadingImg{
+    width: 30px;
+    height: 30px;
+    object-position: center;
+}
+.activeGameList{
+   background: linear-gradient(180deg, #f9b336 50%, #cb8100 100%) !important;
+}
+.gameProviders{
+    background: #00000082;
+    overflow-x: scroll;
+
+}
+.gameProvider{
+    background: #560960;
+    box-shadow: -1px 1px 6px 0 #00000059;
+    color: #fff;
+}
+.gameProviders::-webkit-scrollbar{
+ display: none;
+}
+.gameImg{
+    width: 90%;
+    height: 100%;
+    box-shadow: -1px 1px 6px 0 #00000059;
+
+    border: 3px solid #F9B336;
+}
+.hotgame{
+    width: 90%;
+    height: 200px;
+    border: 3px solid #f2da7c;
+ }
+ .gameListStart{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .gameListEnd{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .lgGameTab{
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, rgb(132, 0, 151) 40%, rgb(118, 6, 129) 100%);
+    transform: skew(160deg);
+    border: 4px solid rgb(212, 3, 244) ;
+  }
+  .lgGameTabText{
+    transform: skew(-160deg);
+
+  }
+@media screen and (max-width:500px) {
+    .gameProvider{
+        font-size: 13px;
+    }
+    .hotgame{
+        width: 95%;
+        height: 150px;
+    }
+}
